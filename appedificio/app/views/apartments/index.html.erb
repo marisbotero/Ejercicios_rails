@@ -1,0 +1,25 @@
+
+<h1>Apartamentos de la unidad residencial</h1>
+
+
+
+  <div class="panel-heading">Registro de los apartamentos</div>
+  <!-- Table -->
+  <table class="table">
+    <tr>
+    <th> Apartamento</th>
+    
+  </tr>
+ 
+ <% @tower.apartments.each do |apartment| %>
+    <tr>
+      <td><%= apartment.name %></td>
+      <td><%= apartment.tower_id %></td>
+
+
+    
+    </tr>
+  <% end %>
+</table>
+  </table>
+</div>

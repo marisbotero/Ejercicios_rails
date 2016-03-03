@@ -1,0 +1,18 @@
+<h1>Ingrese la torre </h1>
+
+<%= form_for @tower do |t| %>
+  <p>
+    <%= t.label :name," torre" %><br>
+    <%= t.text_field :name %>
+  </p>
+  
+   <p>
+    <%= t.label :doorman,"Portero " %><br>
+    <%= t.text_field :doorman %>
+  </p>
+  <p>
+    <%= t.submit %>
+  </p>
+<% end %>
+
+

@@ -1,0 +1,29 @@
+<h1>Unidad Molinos de Cataluña</h1>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">Registro de Torres</div>
+  <!-- Table -->
+  <table class="table">
+    <tr>
+    <th> Torre</th>
+    <th>Portero</th>
+  </tr>
+ 
+ <% @towers.each do |tower| %>
+    <tr>
+      <td><%= tower.name %></td>
+      <td><%= tower.doorman %></td>
+      <td><%= link_to "Editar", edit_tower_path(tower) %></td>
+      <td><%= link_to 'Agregar', tower_path(tower) %></td>
+    <td><%= link_to "Eliminar", tower_path(tower),method: :delete, data:{confirm:"estas seguro?"} %></td>
+    </tr>
+  <% end %>
+</table>
+  </table>
+</div>
+
+
+
+
+
+	

@@ -1,0 +1,17 @@
+<h1>create  tweet</h1>
+
+
+<%= link_to "ver todos", new_tweet_path %>
+<%= form_for @tweet do |f| %>
+  <p>
+    <%= f.label :message, "tweet" %><br>
+    <%= f.text_field :message %>
+  </p>
+
+  <p>
+  <%=f.select :user_id, User.all.collect {|u| [u.nombre, u.id]} %>
+  </p>
+<p>
+    <%= f.submit %>
+  </p>
+<% end %>
