@@ -8,13 +8,20 @@
   <table class="table">
     <tr>
     <th> Apartamento</th>
-    
+    <th> Torre </th>
+    <th> Piso </th>
   </tr>
  
  <% @tower.apartments.each do |apartment| %>
     <tr>
       <td><%= apartment.name %></td>
       <td><%= apartment.tower_id %></td>
+       <td><%= apartment.level %></td>
+      <td><%= link_to "Editar", edit_tower_apartment_path(@tower, apartment) %></td>
+      <td><%= link_to  "Agregar", new_tower_apartment_path %></td>
+      <td><%= link_to "Eliminar", tower_apartment_path(@tower,apartment),method: :delete, data:{confirm:"estas seguro?"} %></td>
+
+      
 
 
     
