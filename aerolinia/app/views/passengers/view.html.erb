@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Itinerario de viaje</h1>
+
+<table>
+  <thead>
+    <tr>
+     
+      <th>Nombre</th>
+      <th>Ciudad de destino</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+   
+      <tr>
+      <td><%= @passenger.nombre %></td>
+        <td><%= @passenger.route.ciudad_destino %></td>
+      
+      </tr>
+
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Passenger', new_passenger_path %>

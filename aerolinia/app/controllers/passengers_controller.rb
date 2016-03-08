@@ -51,6 +51,12 @@ class PassengersController < ApplicationController
     end
   end
 
+  def view
+    @passenger = Passenger.find(params[:passenger_id])
+
+
+  end 
+
   # DELETE /passengers/1
   # DELETE /passengers/1.json
   def destroy
@@ -69,6 +75,6 @@ class PassengersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def passenger_params
-      params.require(:passenger).permit(:fecha_id, :route_id, :nombre, :identificacion)
+      params.require(:passenger).permit(:fecha_id, :route_id, :nombre, :identificacion, :trip_ids)
     end
 end

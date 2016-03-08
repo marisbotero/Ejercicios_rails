@@ -1,5 +1,5 @@
 class Passenger < ActiveRecord::Base
-	has_many :routes
+	belongs_to :route
 	
 
 end
