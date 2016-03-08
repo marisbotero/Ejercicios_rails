@@ -1,0 +1,25 @@
+<%= form_for(@trip) do |f| %>
+  <% if @trip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trip.errors.count, "error") %> prohibited this trip from being saved:</h2>
+
+      <ul>
+      <% @trip.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :passenger_id %><br>
+    <%= f.text_field :passenger_id %>
+  </div>
+  <div class="field">
+    <%= f.label :route_id, "Ciudad de destino" %><br>
+    <%= f.select :route_id, Route.all.collect {|u| [u.ciudad_destino, u.id]} %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

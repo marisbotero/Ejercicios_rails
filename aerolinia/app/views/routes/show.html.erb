@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ciudad origen:</strong>
+  <%= @route.ciudad_origen %>
+</p>
+
+<p>
+  <strong>Ciudad destino:</strong>
+  <%= @route.ciudad_destino %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @route.fecha %>
+</p>
+
+<p>
+  <strong>Cod avion:</strong>
+  <%= @route.cod_avion %>
+</p>
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>
