@@ -16,6 +16,8 @@
       <td><%= link_to "Editar", edit_tower_path(tower) %></td>
       <td><%= link_to 'Agregar', tower_path(tower) %></td>
     <td><%= link_to "Eliminar", tower_path(tower),method: :delete, data:{confirm:"estas seguro?"} %></td>
+     <td><%= link_to  "Apartamento", new_tower_apartment_path(tower) %></td>
+
     </tr>
   <% end %>
 </table>
@@ -24,7 +26,8 @@
 
  
 
+<!--http://localhost:3000/towers/id/apartments/new
 
 
-
+ new_tower_apartment GET    /towers/:tower_id/apartments/new(.:format)
 	
