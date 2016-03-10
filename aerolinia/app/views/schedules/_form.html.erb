@@ -16,8 +16,8 @@
     <%= f.select :route_id, Route.all.collect {|u| [u.ciudad_destino, u.id]} %>
   </div>
   <div class="field">
-    <%= f.label :piolot_id %><br>
-    <%= f.text_field :piolot_id %>
+    <%= f.label :pilot_id %><br>
+    <%= f.text_field :pilot_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
