@@ -1,0 +1,75 @@
+<h1> Paciente </h1>
+<div>
+<%=form_tag("/contact", method:"put") do %>
+<p><%= label_tag(:nombre, "Nombre del paciente") %></p>
+<p><%=text_field_tag(:nombre)%></p>
+<p><%= label_tag(:apellidos, "Apellidos") %></p>
+<p><%=text_field_tag(:apellido)%></p>
+<p><%= label_tag(:documento, "Documento") %></p>
+<p><%=text_field_tag(:documento)%></p>
+<p><%= label_tag(:fecha, "Fecha de Nacimiento") %></p>
+<p><%= select_date Date.today, prefix: :fecha%></p>
+
+
+
+
+<p><%= label_tag(:sexo, "Sexo") %></p>
+<p><%= radio_button_tag(:sexo, "Fememino") %>
+<%= label_tag(:sexo, "Mujer") %>
+<%= radio_button_tag(:sexo, "Masculino") %>
+<%= label_tag(:sexo, "Hombre") %></p>
+
+
+<p><%= label_tag(:vacunas, "vacunas") %></p>
+<p><%= check_box_tag(:vacunas) %>
+<%= label_tag(:vacunas, "Influenza") %>
+<%= check_box_tag(:vacunas) %>
+<%= label_tag(:vacunas, "Hepatitis") %>
+<%= check_box_tag(:vacunas) %>
+<%= label_tag(:vacunas, "Polio") %>
+<%= check_box_tag(:vacunas) %>
+<%= label_tag(:vacunas, "Varicela") %>
+</p>
+
+<p><%= label_tag(:cancer, "ha sufrido usted de algunas de estas enfermedades?") %></p>
+<p><%= label_tag(:cancer, "Cancer") %></p>
+<p><%= radio_button_tag(:cancer, "Cancer") %>
+<%= label_tag(:cancer, "SI") %>
+<%= radio_button_tag(:cancer,"cancer") %>
+<%= label_tag(:sexo, "NO") %></p>
+
+<p><%= label_tag(:hipertension, "hipertension") %></p>
+<p><%= radio_button_tag(:hipertension, "hipertension") %>
+<%= label_tag(:hipertension, "SI") %>
+<%= radio_button_tag(:hipertension,"hipertension") %>
+<%= label_tag(:hipertension, "NO") %></p>
+
+<p><%= label_tag(:diabetis, "diabetis") %></p>
+<p><%= radio_button_tag(:diabetis, "diabetis") %>
+<%= label_tag(:diabetis, "SI") %>
+<%= radio_button_tag(:diabetis,"diabetis") %>
+<%= label_tag(:diabetis, "NO") %></p>
+
+<p><%= label_tag(:desnutricion, "desnutricion") %></p>
+<p><%= radio_button_tag(:desnutricion, "desnutricion") %>
+<%= label_tag(:desnutricion, "SI") %>
+<%= radio_button_tag(:desnutricion,"desnutricion") %>
+<%= label_tag(:desnutricion, "NO") %></p>
+
+
+<p><%= label_tag(:grupo, "Grupo sanguineo") %>
+<select grupo="c_id" id="c_id">
+  <option value="1">A+</option>
+  <option value="2">A-</option>
+  <option value="3">B+</option>
+  <option value="4">B-</option>
+  <option value="5">o+</option>
+  <option value="5">o-</option>
+  <option value="5">otro</option>
+ 
+</select> </p>
+
+
+<p><%=submit_tag("Enviar") %></p>
+</div>
+<% end %>
