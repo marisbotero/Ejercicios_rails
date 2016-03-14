@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombres: MyString
+  apellidos: MyString
+  fecha: 1
+  documento: 1
+  estado: MyString
+  hijos: 1
+  abortos: MyString
+  embarazo: MyString
+  cancer: MyString
+  mamas: MyString
+  hipertension: MyString
+  diabetis: MyString
+  alzheimer: MyString
+
+two:
+  nombres: MyString
+  apellidos: MyString
+  fecha: 1
+  documento: 1
+  estado: MyString
+  hijos: 1
+  abortos: MyString
+  embarazo: MyString
+  cancer: MyString
+  mamas: MyString
+  hipertension: MyString
+  diabetis: MyString
+  alzheimer: MyString

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160311215355) do
+ActiveRecord::Schema.define(version: 20160314034211) do
 
   create_table "kids", force: :cascade do |t|
     t.string   "nombre"
@@ -28,6 +28,43 @@ ActiveRecord::Schema.define(version: 20160311215355) do
     t.string   "grupo"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.string   "nombremadre"
+    t.string   "nombrepadre"
+  end
+
+  create_table "men", force: :cascade do |t|
+    t.string   "nombres"
+    t.string   "apellidos"
+    t.datetime "fecha"
+    t.integer  "documento"
+    t.string   "estado"
+    t.integer  "hijos"
+    t.string   "cancer"
+    t.string   "hipertension"
+    t.string   "diabetis"
+    t.string   "alzheimer"
+    t.string   "grupo"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "edad"
+  end
+
+  create_table "women", force: :cascade do |t|
+    t.string   "nombres"
+    t.string   "apellidos"
+    t.integer  "documento"
+    t.string   "estado"
+    t.integer  "hijos"
+    t.string   "abortos"
+    t.string   "embarazo"
+    t.string   "cancer"
+    t.string   "mamas"
+    t.string   "hipertension"
+    t.string   "diabetis"
+    t.string   "alzheimer"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.datetime "fecha"
   end
 
 end

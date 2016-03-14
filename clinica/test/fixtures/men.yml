@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombres: MyString
+  apellidos: MyString
+  fecha: 2016-03-13 19:36:11
+  documento: 1
+  estado: MyString
+  hijos: 1
+  cancer: MyString
+  hipertension: MyString
+  diabetis: MyString
+  alzheimer: MyString
+  grupo: MyString
+
+two:
+  nombres: MyString
+  apellidos: MyString
+  fecha: 2016-03-13 19:36:11
+  documento: 1
+  estado: MyString
+  hijos: 1
+  cancer: MyString
+  hipertension: MyString
+  diabetis: MyString
+  alzheimer: MyString
+  grupo: MyString
