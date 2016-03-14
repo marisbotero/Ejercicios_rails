@@ -1,5 +1,10 @@
 class KidsController < ApplicationController
 
+  def index
+    @informacion=Kid.all
+
+  end
+
 
   def contact
   	@nombre= params[:nombre]
