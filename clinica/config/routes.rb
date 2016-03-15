@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
  get '/contact', to: 'kids#contact'
  get '/registro', to: 'men#registro'
- get '/registro', to: 'women#registromujer'
+ get '/registro_mujer', to: 'women#registro_mujer'
    root 'home#welcome'
 
 
