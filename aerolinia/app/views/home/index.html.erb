@@ -1,5 +1,5 @@
-<h1>Bienvenido a la aerolinia </h1>
-<ul>
+<h1><span class="label label-default">Bienvenido a la aerolinia </h1>
+<ulclass="nav nav-tabs">
 <li><%= link_to 'Pasajeros', new_passenger_path %></li>
 
 <li><%= link_to 'Pilotos', new_pilot_path %></li>
@@ -8,3 +8,28 @@
 <li><%= link_to 'Aviones', new_airplane_path %></li>
 
 </ul>
+
+<h2>Itineraios de Vuelos</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Ciudad origen</th>
+      <th>Ciudad destino</th>
+      <th>Fecha</th>
+      <th>Cod avion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @routes.each do |route| %>
+      <tr>
+        <td><%= route.ciudad_origen %></td>
+        <td><%= route.ciudad_destino %></td>
+        <td><%= route.fecha %></td>
+        <td><%= route.cod_avion %></td>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
