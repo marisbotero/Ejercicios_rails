@@ -19,7 +19,15 @@
     <%= f.label :identificacion %><br>
     <%= f.text_field :identificacion %>
   </div>
-  
+  <div>
+ <%= f.label :routes %>
+<%= f.collection_check_boxes :route_ids, Route.all, :id, :vuelo %>
+</div>
+   
+<div>
+  <%= f.label :airplane_id, "Avion" %>
+  <%=f.select :airplane_id, Airplane.all.collect {|u| [u.nombre, u.id]} %>
+  </div>
    
   <div class="actions">
     <%= f.submit %>

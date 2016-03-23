@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Pilots</h1>
+<h1>Lista de Pilotos</h1>
 
 <table>
   <thead>
@@ -18,8 +18,8 @@
       <tr>
         <td><%= pilot.nombre %></td>
         <td><%= pilot.identificacion %></td>
-       
-        <td><%= pilot.cod_avion_id %></td>
+        
+        <td><%= pilot.airplane_id %></td>
         <td><%= link_to 'Show', pilot %></td>
         <td><%= link_to 'Edit', edit_pilot_path(pilot) %></td>
         <td><%= link_to 'Destroy', pilot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
