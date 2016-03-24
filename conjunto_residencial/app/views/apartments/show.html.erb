@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @apartment.nombre %>
+</p>
+
+<p>
+  <strong>Piso:</strong>
+  <%= @apartment.piso %>
+</p>
+
+<p>
+  <strong>Tower:</strong>
+  <%= @apartment.tower_id %>
+</p>
+
+
+<%= link_to "agregar apartamento", new_apartment_path %>
+<%= link_to 'Ver Lista de apartamentos', tower_apartments_path %>

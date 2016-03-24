@@ -1,0 +1,25 @@
+<%= form_for(@tower) do |f| %>
+  <% if @tower.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tower.errors.count, "error") %> prohibited this tower from being saved:</h2>
+
+      <ul>
+      <% @tower.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :portero %><br>
+    <%= f.text_field :portero %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Apartamentos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Piso</th>
+      <th>Torre</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tower.apartments.each  do |apartment| %>
+      <tr>
+        <td><%= apartment.nombre %></td>
+        <td><%= apartment.piso %></td>
+        <td><%= apartment.tower_id %></td>
+        <td><%= link_to "Editar", edit_tower_apartment_path(@tower, apartment) %></td>
+      <td><%= link_to  "Agregar", new_tower_apartment_path %></td>
+      <td><%= link_to "Eliminar", tower_apartment_path(@tower,apartment),method: :delete, data:{confirm:"estas seguro?"} %></td> 
+      <td><%= link_to 'Agregar personas', new_user_path %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<td><%= link_to  "Agregar", new_tower_apartment_path %></td>
+
+

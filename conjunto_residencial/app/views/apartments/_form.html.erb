@@ -1,0 +1,25 @@
+
+
+<%= form_for [@tower,@apartment] do |f| %>
+  <p>
+    <%= f.label :propietario %><br>
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :piso %><br>
+    <%= f.text_field :piso%>
+  </p>
+  <p>
+    <%= f.label :torre %><br>
+    <%= f.text_field :tower_id%>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+
+
+ 
+
+
