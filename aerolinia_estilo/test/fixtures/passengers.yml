@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha_id: 2016-03-07 15:11:01
+  route_id: 1
+  nombre: MyString
+  identificacion: MyString
+
+two:
+  fecha_id: 2016-03-07 15:11:01
+  route_id: 1
+  nombre: MyString
+  identificacion: MyString
